@@ -23,7 +23,7 @@ A web application for creating synced music videos from multiple clips. This app
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/reel-maker.git
+   git clone https://github.com/leoasatoorian/reel-maker.git
    cd reel-maker
    ```
 
