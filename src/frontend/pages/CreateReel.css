@@ -1,0 +1,275 @@
+.create-reel {
+  padding-bottom: 3rem;
+}
+
+.create-reel h1 {
+  margin-bottom: 2rem;
+}
+
+.alert {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.reel-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.reel-sidebar {
+  flex: 1;
+  max-width: 400px;
+}
+
+.reel-editor {
+  flex: 2;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--secondary-color);
+  transition: var(--transition);
+}
+
+.tab:hover {
+  color: var(--primary-color);
+}
+
+.tab.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.tab-content {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Upload Tab */
+.upload-area {
+  border: 2px dashed #ced4da;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.upload-area:hover {
+  border-color: var(--primary-color);
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-label {
+  cursor: pointer;
+  display: block;
+}
+
+.upload-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Search Tab */
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-results {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.video-result {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.video-thumbnail {
+  width: 120px;
+  height: 67px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.video-info {
+  flex: 1;
+}
+
+.video-info h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.video-info p {
+  font-size: 0.875rem;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.loading, .no-results {
+  padding: 2rem;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+/* Selected Videos */
+.selected-videos {
+  margin-bottom: 2rem;
+}
+
+.no-videos {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: var(--border-radius);
+  color: var(--secondary-color);
+}
+
+.selected-video {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.video-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.video-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.btn-remove {
+  background: none;
+  border: none;
+  color: var(--danger-color);
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.25rem;
+  transition: var(--transition);
+}
+
+.btn-remove:hover {
+  opacity: 0.8;
+}
+
+.timestamp-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Music Section */
+.music-section {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.music-options {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.music-info {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: var(--border-radius);
+}
+
+/* Playback Speed */
+.playback-speed {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.playback-speed .form-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Create Actions */
+.create-actions {
+  margin-bottom: 2rem;
+}
+
+/* Output Section */
+.output-section {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.output-actions {
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .reel-container {
+    flex-direction: column;
+  }
+  
+  .reel-sidebar {
+    max-width: 100%;
+  }
+  
+  .music-options {
+    flex-direction: column;
+  }
+  
+  .timestamp-controls {
+    flex-direction: column;
+  }
+} 
